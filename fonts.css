@@ -1,0 +1,48 @@
+:root {
+    --primarColor:#F5841F;
+    --secondColor:#16213C;
+    --footerText:#8ECAE6;
+    --buttonText: #ffffff;
+}
+
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--secondColor);
+}
+.orange {
+    color: var(--primarColor);
+}
+h2{
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--secondColor);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.button {
+    font-weight: 700;
+    color: var(--buttonText) ;
+    text-decoration: none;
+}
+.vyhodyCard__text {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--secondColor);
+}
+.recenze__jmeno {
+    font-weight: 700;
+    font-size: 19px;
+}
+.recenze__profese {
+    font-style: italic;
+    font-size: 14px;
+
+}
