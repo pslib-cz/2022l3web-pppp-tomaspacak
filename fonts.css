@@ -32,6 +32,11 @@ h2{
     color: var(--buttonText) ;
     text-decoration: none;
 }
+.pribeh__nadpis {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--secondColor);
+}
 .vyhodyCard__text {
     font-weight: 700;
     font-size: 19px;
@@ -45,4 +50,37 @@ h2{
     font-style: italic;
     font-size: 14px;
 
+}
+.podrobnostiCard__nadpis {
+    margin: 1em;
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--secondColor);
+}
+
+.aktualita__nadpis {
+    font-weight: 700;
+    font-size: 19px;
+}
+.aktualita__odkaz {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primarColor);
+}
+
+
+
+.footer {
+    color: var(--footerText);
+}
+.footer_odkaz {
+    text-decoration: none;
+    color: var(--footerText);
+    font-weight: 400;
+    font-size: 12px;
+}
+.footer__title {
+    font-weight: 800;
+    font-size: 18px;
 }

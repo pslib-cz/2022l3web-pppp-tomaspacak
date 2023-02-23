@@ -49,12 +49,24 @@ gap: 80px;
     grid-area: e;
 }
 
-
+.vyhody__podrobnosti {
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+}
 .vyhody__cardsGrid {
     display: grid;
     gap: 4em;
     justify-items: center;
 }
+
+.aktuality {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
 
 
 
