@@ -10,6 +10,14 @@ html{
     font-weight: 400;
     font-size: 16px;
 }
+.menuUp__text {
+    font-weight: 700;
+    font-size: 12px;
+}
+.menuUp__login {
+    font-weight: 700;
+    font-size: 14px;
+}
 
 h1{
     font-weight: 800;
@@ -19,12 +27,20 @@ h1{
 .orange {
     color: var(--primarColor);
 }
+.uvod {
+    color: var(--secondColor);
+}
 h2{
     font-weight: 800;
     font-size: 25px;
     color: var(--secondColor);
     text-align: center;
     margin-bottom: 2em;
+}
+h3 {
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--secondColor);
 }
 
 .button {
@@ -74,13 +90,26 @@ h2{
 .footer {
     color: var(--footerText);
 }
-.footer_odkaz {
+.footer__odkaz {
     text-decoration: none;
     color: var(--footerText);
     font-weight: 400;
     font-size: 12px;
 }
+.footer__odkaz:hover {
+    color: var(--primarColor);
+}
 .footer__title {
     font-weight: 800;
     font-size: 18px;
+}
+.footer__paticka {
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.dotazy__mail {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--secondColor);
 }
