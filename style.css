@@ -222,10 +222,12 @@ header {
 .podrobnostiCard {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    justify-content: left;
+    gap: 1.5em;
     background-color: #ffffff;
     box-shadow: 0px 0px 25px #D2E7EF;   /*barva root*/
     border-radius: 8px;
+    padding: 1em;
 }
 .podrobnostiCard__text {
     overflow: hidden;
@@ -233,7 +235,7 @@ header {
     text-overflow: ellipsis;
     width: 20em;
     height: 4em;
-    margin: 1em;
+    
     margin-bottom: 2em;
 }
 
@@ -379,3 +381,27 @@ footer {
     width: 30em;
     height: 2.8em;
 }
+.podrobnostiCard--funkce {
+    position: relative;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+.podrobnostiCard--funkce::after {
+    content: url(/img/funkce__hover.svg);
+    display: flex;
+    width: 14.8px;
+    height: 10.59px;
+    /*background-image: url(/img/funkce__hover.svg);*/
+    background-position: center;
+    background-size: contain;
+    background-color: var(--primarColor);
+    position: absolute;
+    padding: 0.5em;
+    border-radius: 50%;
+    
+    left: 1em;
+    bottom: -0.5em;
+
+}
+
+
+
