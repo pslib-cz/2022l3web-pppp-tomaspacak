@@ -27,17 +27,24 @@ padding-bottom: 0;
 }
 
 .loga {
-    display: grid;
+    /*display: grid;
     grid-template-areas: 
-    "a a a b b b c c"
-    ". . d d e e . .";
+    "a a b b c"
+    ". d e e .";
     gap: 2em;
     justify-content: center;
-    align-content: center;
-
+    align-content: center;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+.loga__wrapper {
+    display: flex;
+    gap: 1em;
 }
 
-.logo_img--1 {
+/*.logo_img--1 {
     grid-area: a;
 }
 .logo_img--2 {
@@ -51,7 +58,7 @@ padding-bottom: 0;
 }
 .logo_img--5 {
     grid-area: e;
-}
+}*/
 
 .vyhody__podrobnosti {
     display: grid;
@@ -62,6 +69,15 @@ padding-bottom: 0;
     display: grid;
     gap: 4em;
     justify-items: center;
+}
+
+.pribehFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 1.5em;
 }
 
 .aktuality {

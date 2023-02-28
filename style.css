@@ -9,6 +9,9 @@
 p {
     margin: 0;
 }
+/*a {
+    text-decoration: none;
+}*/
 
 header {
     width: 100vw;
@@ -26,6 +29,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0px;
     gap: 8px;
 }
@@ -85,10 +89,10 @@ header {
     align-items: flex-start;
     padding: 20px;
     gap: 17px;
-    width: 25em;
+    width: 20em;
 }
 .uvod_img {
-    width: 100%;
+    width: 300px;   /*!!!!!*/
 }
 .uvodBody__odrazka::before {
     content: "";
@@ -127,17 +131,10 @@ header {
 }
 
 .hidden { 
-    display: none;
+    display: none;         /*špatně!!!! od marginovat absolut*/
 }
 
-.pribehFlex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 15px;
-    width: 490px;
-}
+
 .pribeh {
     display: flex;
     flex-direction: column;
@@ -173,13 +170,13 @@ header {
     align-items: flex-start;
     padding: 0px;
     gap: 17px;
-    width: 257px;
+   /* width: 339px;*/
 }
 .recenze__text {
     overflow: hidden;
     flex-wrap: wrap;
     text-overflow: ellipsis;
-    width: 15em;
+    width: 230px;
     height: 4em;
 }
 .recenze__wrapper--2 {
@@ -220,10 +217,6 @@ header {
     align-self: center;
 }
 .podrobnostiCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 1.5em;
     background-color: #ffffff;
     box-shadow: 0px 0px 25px #D2E7EF;   /*barva root*/
     border-radius: 8px;
@@ -233,17 +226,18 @@ header {
     overflow: hidden;
     flex-wrap: wrap;
     text-overflow: ellipsis;
-    width: 20em;
+    width: 17em;
     height: 4em;
-    
+    color: black;   /*barva root*/
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 .aktualita__text {
     overflow: hidden;
     flex-wrap: wrap;
     text-overflow: ellipsis;
-    width: 25em;
+    width: 16em;
     height: 2.8em;
 }
 .aktuality__wrapper {
@@ -259,8 +253,8 @@ header {
 .aktualita__wrapper::before {
     content: "24.";
     /*display: inline-block;*/
-    width: 52px;
-    height: 53px;
+    width: 43px;
+    height: 44px;
     background-image: url(/img/aktualiy.svg);
     /*text-align: center;*/
     display: flex;
@@ -272,7 +266,7 @@ header {
     /*background-position: center;*/
     background-position-y: 10px;
     /*position: absolute;*/
-    margin-left: -4em;
+    margin-left: -3.1em;
     margin-bottom: -2.4em;
 }
 .aktuality__bg {
@@ -311,9 +305,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /*justify-content: center;*/
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 0px;
-    gap: 30px;
+    gap: 1em;
 }
 .footer__wrapper {
     display: flex;
