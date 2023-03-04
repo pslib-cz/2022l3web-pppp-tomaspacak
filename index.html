@@ -22,8 +22,48 @@
             <p class="menuUp__login">Přihlášení</p>
         </div>
         <div class="menu__menuDown">
-
+            <nav class="navbar">
+                <a href="./index.html" class="navbar__logo"><img src="/img/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
+                
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/funkce.html">Funkce</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Podpora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_4">Ceník</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Kontakt</a>
+                    </li>
+                </menu>
+                
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+            </nav>
         </div>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
 
     </header>
     <main>
@@ -41,10 +81,8 @@
             </div>
             <img class="uvod_img" src="/img/uvod_img.png" alt="obrazovka telefonu s aplikacemi">
         </div>
-        
-        
-        
     </main>
+
     <section>
         <h2 class="hidden">Loga</h2>
         <div class="loga">
@@ -90,9 +128,10 @@
             <a class="podrobnostiCard" href="#"><p class="podrobnostiCard__nadpis">Administrace aplikace</p><p class="podrobnostiCard__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p></a>
 
             /* tecky 2 */
-            <a class="button button--L" href="#">Prozkoumat všechny funkce</a>
+            
 
         </div>
+        <a class="button button--L" href="#">Prozkoumat všechny funkce</a>
     </section>
 
     <section>
@@ -102,7 +141,7 @@
                 <p class="pribeh__nadpis">Jsme dva - Honza a Tomáš</p>
                 <p class="pribeh__text">Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst. 
                     Fusce luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras ultricies, elit sit amet cursus consectetur, risus felis ullamcorper nulla, ut scelerisque sapien lorem non sem. Integer vestibulum ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo malesuada purus a mollis. Vestibulum pulvinar aliquam libero eu consequat. Cras massa orci, ultrices sed scelerisque id, semper vel neque. Proin a turpis quis nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet ante. Mauris sit amet mi vitae arcu dignissim porttitor et in arcu. Nullam eleifend molestie arcu, pretium fermentum orci feugiat eget. Integer dapibus tincidunt ipsum, at rutrum magna rutrum at. Quisque pretium convallis vestibulum.</p>
-                <a class="button button--S href="#">Přečíst celý příběh</a>
+                <a class="button button--S" href="#">Přečíst celý příběh</a>
             </div>
             <img class="pribeh__img" src="/img/pribeh__img.png" alt="">
         </div>
