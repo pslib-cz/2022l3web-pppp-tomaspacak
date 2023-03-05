@@ -3,7 +3,7 @@
     --secondColor:#16213C;
     --footerText:#8ECAE6;
     --buttonText: #ffffff;
-    --vyhodyBg: rgba(142, 202, 230, 0.2);
+    --vyhodyBg: rgba(231, 231, 231, 0.6);
     --aktualityBg: rgba(221, 221, 221, 0.6); /*skontrolovat*/
 }
 p {
@@ -168,7 +168,7 @@ header{
 }
 
 .button {
-    /*display*/
+    display: inline-block;
     padding: 12px 24px;
     text-align: center;
     border-radius: 30px;
@@ -421,26 +421,26 @@ footer {
 
 /*FUNKCE */
 
-.dotazy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-}
+
 .dotazy__wrapper {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     padding: 0px;
-    gap: 15px;
+    /*gap: 15px;*/
 }
 .dotazy__text {
     overflow: hidden;
-    flex-wrap: wrap;
     text-overflow: ellipsis;
     width: 15em;
     height: 2.8em;
+    text-align: center;
+}
+.dotazy__mail {
+    text-align: center;
+}
+.dotazy__text--2 {
+    text-align: center;
 }
 
 
@@ -491,6 +491,12 @@ footer {
 .podrobnostiCard--funkce:hover {
     color: var(--primarColor);
     display: block;
+}
+.vyhody__podrobnosti {
+    background-color: var(--vyhodyBg);
+    padding: 5em;
+    border-radius: 32px;
+    
 }
 
 
