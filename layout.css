@@ -13,17 +13,28 @@ padding-top: 0;
 padding-bottom: 0;
 }
 
+
 .uvod {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0px;
+    justify-items: right;
+   /* justify-content: flex-start;*/
+    align-content: flex-start;
     gap: 40px;
+    max-width: 20em;    /*!!!!!!!!!!*/
+}
+.uvodBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+   /* width: 20em;*/
 }
 
 .uvod_img {
+    width: 100%;   
+   /* align-self: flex-start;*/
     border-radius: 22.5px;
-    width: 35em;
 }
 
 .loga {
@@ -78,6 +89,13 @@ padding-bottom: 0;
     flex-wrap: wrap;
     padding: 0px;
     gap: 1.5em;
+    margin: 0 2em;
+}
+
+.recenze__wrapper--2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
 }
 
 .aktuality {
@@ -119,7 +137,7 @@ padding-bottom: 0;
     }
 
     .uvod {
-        width: 60em;
+        max-width: 100%;
     }
 
     .loga {
@@ -155,6 +173,40 @@ padding-bottom: 0;
     }
     .funkce__text {
         width: 20em;
+    }
+}
+
+@media (min-width: 961px) {
+
+}
+
+/* desktop*/
+@media (min-width: 1281px) {
+    .uvod {
+        flex-direction: row;
+        width: 80em;
+        justify-content: center;
+    }
+    .uvodBody {
+        width: 33em;
+        
+    }
+    .uvod_img {
+        width: 20em;      /*!!!!!!!!!*/
+    }
+
+
+    .vyhody__cardsGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+    }
+    .vyhody__podrobnosti {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+    }
+
+    .recenze__wrapper--2 {
+        flex-direction: row;
     }
 }
 
