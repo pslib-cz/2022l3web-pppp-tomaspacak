@@ -5,14 +5,12 @@ position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
-/*margin-left: 2em;*/
-gap: 3em;
-margin-top: 0;
-margin-bottom: 0;
-padding-top: 0;
-padding-bottom: 0;
+margin: 0;
 }
 
+section {
+    padding: 2em 1em;
+}
 
 .uvod {
     display: flex;
@@ -121,15 +119,14 @@ padding-bottom: 0;
     gap: 1em;
 }
 .funkce__text {
-    width: fit-content;
+    width: 15em;
 }
-
+.vyhody__podrobnosti--funkce {
+    padding: 1em;
+    border-radius: 0.9em;
+}
 @media (min-width: 768px) {
-    .navbar__menu {
-        display: flex;
-        gap: 1em;
-        
-    }
+    
     .nav-link {
         color: black;
         font-weight: 700;
@@ -137,7 +134,7 @@ padding-bottom: 0;
     }
 
     .uvod {
-        max-width: 100%;
+        max-width: 30em;
     }
 
     .loga {
@@ -152,10 +149,14 @@ padding-bottom: 0;
     .center {
         align-self: center;
     }
-
+    .story {
+        width: max-content;
+    }
     .pribehFlex {
         flex-direction: row;
         flex-wrap: nowrap;
+        width: 600px;
+        margin: 0;
     }
     .pribeh__text {
         width: 20em;
@@ -174,10 +175,20 @@ padding-bottom: 0;
     .funkce__text {
         width: 20em;
     }
+
+    .funkce__wrapper2 {
+        width: 100%;
+    }
+    .vyhody__podrobnosti--funkce {
+        padding: 2em;
+        border-radius: 32px;
+    }
 }
 
 @media (min-width: 961px) {
-
+    .vyhody__podrobnosti {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* desktop*/
@@ -189,7 +200,6 @@ padding-bottom: 0;
     }
     .uvodBody {
         width: 33em;
-        
     }
     .uvod_img {
         width: 20em;      /*!!!!!!!!!*/
@@ -208,6 +218,8 @@ padding-bottom: 0;
     .recenze__wrapper--2 {
         flex-direction: row;
     }
+    
+    
 }
 
 
