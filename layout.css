@@ -36,13 +36,6 @@ section {
 }
 
 .loga {
-    /*display: grid;
-    grid-template-areas: 
-    "a a b b c"
-    ". d e e .";
-    gap: 2em;
-    justify-content: center;
-    align-content: center;*/
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -52,22 +45,6 @@ section {
     display: flex;
     gap: 1em;
 }
-
-/*.logo_img--1 {
-    grid-area: a;
-}
-.logo_img--2 {
-    grid-area: b;
-}
-.logo_img--3 {
-    grid-area: c;
-}
-.logo_img--4 {
-    grid-area: d;
-}
-.logo_img--5 {
-    grid-area: e;
-}*/
 
 .vyhody__podrobnosti {
     display: grid;
@@ -111,6 +88,7 @@ section {
     gap: 30px;
     margin-left: 4em;
     margin-right: 4em;
+    width: 100%;
 }
 .funkce__wrapper {
     display: flex;
@@ -124,6 +102,13 @@ section {
 .vyhody__podrobnosti--funkce {
     padding: 1em;
     border-radius: 0.9em;
+}
+
+.kontakt__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+    gap: 1em;
 }
 @media (min-width: 768px) {
     
@@ -186,8 +171,25 @@ section {
 }
 
 @media (min-width: 961px) {
-    .vyhody__podrobnosti {
+    .uvod {
+        flex-direction: row;
+        max-width: 50em
+    }
+    .uvodBody {
+        width: 50em;
+    }
+    .vyhody__podrobnosti--funkce {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .kontakt__wrapper {
+        flex-direction: row;
+        margin: 0 2em;
+        gap: 3em;
+    }
+    .kontakt__wrapper2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -195,17 +197,11 @@ section {
 @media (min-width: 1281px) {
     .uvod {
         flex-direction: row;
-        width: 80em;
+        max-width: 60em;
         justify-content: center;
     }
-    .uvodBody {
-        width: 33em;
-    }
-    .uvod_img {
-        width: 20em;      /*!!!!!!!!!*/
-    }
-
-
+    
+    
     .vyhody__cardsGrid {
         grid-template-columns: repeat(4, 1fr);
         gap: 1em;

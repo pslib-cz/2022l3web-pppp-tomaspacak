@@ -114,6 +114,12 @@ h3 {
 .footer__odkaz:hover {
     color: var(--primarColor);
 }
+.footer__neodkaz {
+    text-decoration: none;
+    color: var(--footerText);
+    font-weight: 400;
+    font-size: 12px;
+}
 .footer__title {
     font-weight: 800;
     font-size: 18px;
@@ -127,4 +133,15 @@ h3 {
     font-weight: 800;
     font-size: 20px;
     color: var(--secondColor);
+}
+
+.kontakt__text {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--secondColor);
+    margin-bottom: 0.3em;
+}
+
+.h1--otherPage {
+    margin-left: 1em;
 }
