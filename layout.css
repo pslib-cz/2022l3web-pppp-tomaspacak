@@ -9,28 +9,30 @@ margin: 0;
 }
 
 section {
-    padding: 2em 1em;
+   /* padding: 2em 1em;*/
 }
 
 .uvod {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     justify-items: right;
-   /* justify-content: flex-start;*/
+    justify-content: flex-start;
     align-content: flex-start;
-    gap: 40px;
-    max-width: 20em;    /*!!!!!!!!!!*/
+    gap: 40px;*/
+    /*max-width: 20em; */   /*!!!!!!!!!!*/
+    margin: 0 2em;
 }
 .uvodBody{
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 17px;
    /* width: 20em;*/
+   margin-bottom: 1em;
 }
 
-.uvod_img {
-    width: 100%;   
+.uvod__img {
+   /* width: 100%;*/   
    /* align-self: flex-start;*/
     border-radius: 22.5px;
 }
@@ -49,7 +51,7 @@ section {
 .vyhody__podrobnosti {
     display: grid;
     justify-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 .vyhody__cardsGrid {
     display: grid;
@@ -58,43 +60,47 @@ section {
 }
 
 .pribehFlex {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     padding: 0px;
     gap: 1.5em;
     margin: 0 2em;
 }
 
 .recenze__wrapper--2 {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 4em;*/
 }
 
 .aktuality {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2em;*/
+    
+}
+.aktualita__wrapper {
+    margin-bottom: 2em;
 }
 
 
 .funkce {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center;*/
+    /*padding: 10px 20px;
     gap: 30px;
     margin-left: 4em;
     margin-right: 4em;
-    width: 100%;
+   /* width: 100%;*/
 }
 .funkce__wrapper {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1em;
+    gap: 1em;*/
 }
 .funkce__text {
     width: 15em;
@@ -127,6 +133,7 @@ section {
     }
     .vyhody__cardsGrid {
         grid-template-columns: 1fr 1fr;
+        gap: 2em;
     }
     .vyhody__podrobnosti {
         grid-template-columns: 1fr 1fr;
@@ -134,25 +141,27 @@ section {
     .center {
         align-self: center;
     }
-    .story {
-        width: max-content;
-    }
+    
     .pribehFlex {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: 600px;
-        margin: 0;
+        align-items: center;
+        margin: 0 5em;
+        max-width: 900px;
     }
     .pribeh__text {
-        width: 20em;
+       /* width: 20em;*/
     }
 
     .aktuality {
+        display: flex;
         flex-direction: row;
         gap: 8em;
     }
 
     .funkce__wrapper {
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -162,16 +171,18 @@ section {
     }
 
     .funkce__wrapper2 {
-        width: 100%;
+       /* width: 100%;*/
+       margin: 3em;
     }
     .vyhody__podrobnosti--funkce {
-        padding: 2em;
+        padding: 3em;
         border-radius: 32px;
     }
 }
 
 @media (min-width: 961px) {
     .uvod {
+        display: flex;
         flex-direction: row;
         max-width: 50em
     }
@@ -200,8 +211,6 @@ section {
         max-width: 60em;
         justify-content: center;
     }
-    
-    
     .vyhody__cardsGrid {
         grid-template-columns: repeat(4, 1fr);
         gap: 1em;
@@ -212,7 +221,8 @@ section {
     }
 
     .recenze__wrapper--2 {
-        flex-direction: row;
+        display: flex;
+        gap: 2em;
     }
     
     
