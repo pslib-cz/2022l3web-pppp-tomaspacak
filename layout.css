@@ -109,13 +109,20 @@ section {
     padding: 1em;
     border-radius: 0.9em;
 }
-
-.kontakt__wrapper {
-    display: flex;
-    flex-direction: column;
+/*KONTAKT*/
+.kontakt__wrapper {      /*style*/
+    /*display: flex;
+    flex-direction: column;*/
     margin: 0 2em;
-    gap: 1em;
+    /*gap: 1em;*/
 }
+.kontakt__wrapper2 {
+    margin-bottom: 1em;
+}
+.kontakt__paticka {
+    margin-top: 3em;
+}
+
 @media (min-width: 768px) {
     
     .nav-link {
@@ -178,6 +185,27 @@ section {
         padding: 3em;
         border-radius: 32px;
     }
+
+    .kontakt__wrapper {
+        display: flex;
+        gap: 1em;
+        max-width: 1000px;
+    }
+    .kontakt__paticka {
+        margin: 0;
+    }
+    .kontakt__wrapper2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        flex-basis: 310px;
+        flex-grow: 1;
+    }
+    .kontakt__mapaImg {
+        flex-basis: 500px;
+        flex-grow: 2;
+    }
 }
 
 @media (min-width: 961px) {
@@ -197,11 +225,7 @@ section {
         margin: 0 2em;
         gap: 3em;
     }
-    .kontakt__wrapper2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    
 }
 
 /* desktop*/

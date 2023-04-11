@@ -176,7 +176,7 @@ section {
         transition: 1s;
         position: absolute;
         background-color: var(--primarColor);
-        width: 100%;
+        /*width: 100%;*/
         z-index: 0;
         padding-left: 2em;
     }
@@ -638,12 +638,12 @@ footer {
 .kontakt__background {
     background-color: var(--vyhodyBg);
     width: 100%;
-    margin: 6em 0;
-    padding: 1em 0;
+    margin-bottom: 3em;
+    padding: 2em 0;
 }
 
 .kontakt__mapaImg {
-  /*  width: 100%;*/
+  max-width: 700px;
 }
 
 
