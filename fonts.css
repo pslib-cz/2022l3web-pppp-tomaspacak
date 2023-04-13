@@ -3,6 +3,7 @@
     --secondColor:#16213C;
     --footerText:#8ECAE6;
     --buttonText: #ffffff;
+    --text: black;
 }
 
 html{
@@ -11,10 +12,6 @@ html{
     font-size: 16px;
 }
 .menuUp__text {
-    font-weight: 700;
-    font-size: 12px;
-}
-.menuUp__login {
     font-weight: 700;
     font-size: 14px;
 }
@@ -80,7 +77,7 @@ h3 {
 .podrobnostiCard__nadpis {
     font-weight: 700;
     font-size: 19px;
-    color: var(--secondColor);
+    color: var(--text);
 }
 .podrobnostiCard__nadpis--funkce {
     color: var(--primarColor);

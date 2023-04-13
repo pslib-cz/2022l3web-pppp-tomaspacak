@@ -5,6 +5,8 @@
     --buttonText: #ffffff;
     --vyhodyBg: rgba(142, 202, 230, 0.15);
     --aktualityBg: rgb(245, 245, 245); /*skontrolovat*/
+    --primarLines: #D9D9D9;
+    --Slines: #EFEFEF;
     --text: black;
 }
 p {
@@ -26,31 +28,24 @@ header {
     width: 100%;
 }
 section {
-    margin-top: 2em;
+   /* margin-top: 2em;*/
 }
+
+/*MENU*/
 .menu__menuUp {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-between;
-    align-items: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    gap: 50px;
+    /*align-items: center;*/
+    padding: 1em 2em;
+    /*gap: 50px;*/
     background-color: var(--aktualityBg);
     /*width: 100%;*/
     position: relative;
     z-index: 2;
 }
-.menuUp__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px;
-    gap: 8px;
-    margin-left: 1em;
-}
-.menuUp__login::before {
+
+.menuUp__text--login::before {
     content: "";
     display: inline-block;
     width: 24px;
@@ -61,10 +56,15 @@ section {
     margin-right: 0.5em;
 }
 .menuUp__login {
+    /*display: flex;
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*margin-right: 1em;*/
+}
+.menuUp__text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 1em;
 }
 .menuUp__text--phone::before {
     content: "";
@@ -86,29 +86,28 @@ section {
     background-size: contain;
     margin-right: 0.5em;
 }
-.menuUp__text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.menuUp__text--phone::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin: 0 1em;
 }
-
 
 .navbar {
     position: relative;
     justify-content: space-between;
     align-items: center;
 }
-
 /* hamburger menu */
 .hamburger-row {
-    padding: 1em;
+    padding: 1em 2em;
     display: flex;
     justify-content: flex-end;
 }
 .hamburger {
     display: block;
 }
-
 .hamburger-nav ul {
     margin: 0;
     padding: 0;
@@ -122,9 +121,8 @@ section {
     position: absolute;
     top: 25%;
     z-index: 5;
-    margin-left: 1em;
+    margin-left: 2em;
 }
-
 .hamburger-nav li:hover {
     color: var(--buttonText);
 }
@@ -134,7 +132,6 @@ section {
     position: relative;
     overflow: hidden;
 }
-  
 .hamburger span {
     position: absolute;
     height: 9px;
@@ -143,7 +140,6 @@ section {
     left: 0;
     transition: 1s;
 }
-
 .hamburger span:nth-child(1) { top: 0px; }
   
 .hamburger span:nth-child(2) { top: 18px; transition: 0.2s; }
@@ -176,7 +172,7 @@ section {
         transition: 1s;
         position: absolute;
         background-color: var(--primarColor);
-        /*width: 100%;*/
+        width: 11em;
         z-index: 0;
         padding-left: 2em;
     }
@@ -248,14 +244,13 @@ section {
         content: "";
         display: inline-block;
         width: 1px;
-        height: 2.2em;
-        background-color: var(--aktualityBg);
+        height: 32px;
+        background-color: var(--primarLines);
         position: absolute;
         bottom: 9%;
         margin-left: -2em;
     }
 }
-
 
 
 header{
@@ -266,7 +261,10 @@ header{
     margin-bottom: 2em;
 }
 
-
+/*INDEX*/
+.uvodBody__odrazky {
+    margin: 1.5em 0;
+}
 .uvodBody__odrazka::before {
     content: "";
     display: inline-block;
@@ -277,7 +275,6 @@ header{
     background-size: contain;
     margin-right: 3px;
 }
-
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -288,10 +285,6 @@ header{
 .button:hover {
     background-color: var(--secondColor);
 }
-/*.button--S {
-    padding: 6.4px 12.8px;
-    border-radius: 16px;
-}*/
 .button--border {
     border: 4px solid var(--primarColor);
     border-radius: 30px;
@@ -307,36 +300,61 @@ header{
     position: relative;
     left: 50%;
 }
-
-.hidden { 
+.skryt { 
    position: absolute;
    margin-left: -300em;         /*špatně!!!! od marginovat absolut*/
 }
-
-
-.pribeh {
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 1em;*/
-   /* flex-grow: 2;*/
-   flex-basis: 200px;
-   flex-grow: 1;
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--Slines);
+    margin: 2em 0;
 }
-.pribeh__text {
+
+
+.vyhody {
+    background: var(--vyhodyBg); /*checknout*/
+    width: 100%;
+    padding-bottom: 2em;
+    padding-top: 1em ;
+}
+.vyhodyCard {
+    width: 304px;
+    text-align: center;
+}
+.vyhody__line {
+    border: 1px dashed var(--footerText);
+    transform: matrix(1, 0, 0, -1, 0, 0);    /*znytecny*/
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin: 2em 0;
+}
+.podrobnostiCard {
+    background-color: var(--buttonText);
+    box-shadow: 0px 0px 25px var(--footerText);   /*barva root*/
+    border-radius: 8px;
+    padding: 1em;
+    width: 15em;
+}
+.podrobnostiCard:hover .podrobnostiCard__nadpis {
+    color: var(--secondColor);
+}
+.podrobnostiCard__text {
     overflow: hidden;
     flex-wrap: wrap;
-    text-overflow: ellipsis;   /*overflow*/
-    /*width: 16em;*/
+    text-overflow: ellipsis;  
     height: 4em;
-    margin: 0;
+    color: var(--text);   /*barva root*/
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+
+.pribeh__text {
     margin: 1em 0;
 }
 .pribeh__img {
-    flex-basis: 200px;
-    flex-grow: 1;
-   /* width: 100%;*/
     border-radius: 4.3%;
 }
 
@@ -363,57 +381,11 @@ header{
     width: 230px;
     height: 4em;
 }
-
 .recenze__wrapper--1 {
     /*display: flex;
     flex-direction: column;
     gap: 2.5em;
     align-items: center;*/
-}
-
-.vyhody {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;*/
-    background: var(--vyhodyBg); /*checknout*/
-    width: 100%;
-    padding-bottom: 2em;
-    padding-top: 1em ;
-}
-.vyhodyCard {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 27px;*/
-    width: 304px;
-    text-align: center;
-}
-.vyhody__line {
-    border: 1px dashed var(--footerText);
-    transform: matrix(1, 0, 0, -1, 0, 0);    /*znytecny*/
-    width: 70%;
-    position: relative;
-    left: 15%;
-    margin: 2em 0;
-}
-.podrobnostiCard {
-    background-color: var(--buttonText);
-    box-shadow: 0px 0px 25px var(--footerText);   /*barva root*/
-    border-radius: 8px;
-    padding: 1em;
-    width: 15em;
-}
-.podrobnostiCard__text {
-    overflow: hidden;
-    flex-wrap: wrap;
-    text-overflow: ellipsis;
-   /* width: 15em;*/
-    height: 4em;
-    color: var(--text);   /*barva root*/
-    margin-bottom: 2em;
-    margin-top: 1em;
 }
 
 .aktualita__text {
@@ -426,15 +398,16 @@ header{
 .aktuality__wrapper { /*zbytecny*/
     display: grid;
     gap: 1em;
-    
 }
-
-.aktualita {
+.aktuality {
+    margin-right: -3em;
+}
+.aktualita {   /*smazat tridu*/
     /*display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;*/
-    margin-right: -3em;
+    /*margin-right: -3em;*/
 }
 .aktualita__wrapper::before {
     content: "24.";
@@ -442,7 +415,6 @@ header{
     width: 43px;
     height: 44px;
     background-image: url(./img/aktualiy.svg);
-    /*text-align: center;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -451,7 +423,6 @@ header{
     background-repeat: no-repeat;
     /*background-position: center;*/
     background-position-y: 10px;
-    /*position: absolute;*/
     margin-left: -3.1em;
     margin-bottom: -2.4em;
 }
@@ -462,10 +433,8 @@ header{
     background-color: var(--aktualityBg);
     width: 100%;
     padding-top: 1em;
+    margin-top: 2em;
 }
-
-
-
 
 
 footer {
@@ -492,7 +461,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*justify-content: center;*/
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 0px;
@@ -533,6 +501,32 @@ footer {
     padding: 0px;
     gap: 10px;
 }
+.footer__odkaz--tel::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(./img/menu_phone.svg);
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.5em;
+}
+.footer__odkaz--tel {
+    display: flex;
+}
+.footer__odkaz--mail::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./img/menu_mail.svg);
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.5em;
+}
+.footer__odkaz--mail {
+    display: flex;
+}
 .footer__line {
     display: block;
     width: 100%;
@@ -540,29 +534,10 @@ footer {
     opacity: 0.2;
 }
 
-
 /*FUNKCE */
-
-
-.dotazy__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-    margin-top: 1em;
+.funkce__wrapper2 {
+    margin-bottom: 2em;
 }
-.dotazy__text {
-    text-align: center;
-    width: 20em;
-}
-.dotazy__mail {
-    text-align: center;
-}
-.dotazy__text--2 {
-    text-align: center;
-}
-
-
 .funkce__video::before {
     content: "";
     /*display: inline-block;*/
@@ -587,15 +562,15 @@ footer {
     position: relative;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);   /*root*/
 }
-
+.vyhody__podrobnosti--funkce {
+    background-color: var(--aktualityBg);
+}
 .podrobnostiCard__text::after {
     content: url(./img/funkce__hover.svg);
     display: flex;
     /*width: 14.8px;
     height: 10.59px;*/
     height: 14.8px;
-    /*background-position: center;
-    background-size: contain;*/
     background-color: var(--primarColor);
     position: absolute;
     padding: 0.7em;
@@ -608,17 +583,26 @@ footer {
 .dotazy {
     margin: 2em 0;
 }
+.dotazy__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+.dotazy__text {
+    text-align: center;
+    width: 20em;
+}
+.dotazy__mail {
+    text-align: center;
+}
+.dotazy__text--2 {
+    text-align: center;
+}
 .funkce__wrapper {
     /*margin: 0 2em;*/
 }
-.funkce__wrapper2 {
-    align-items: flex-start;
-}
-
-.vyhody__podrobnosti--funkce {
-    background-color: var(--aktualityBg);
-}
-
 .vyhody__podrobnosti--funkce .podrobnostiCard--funkce:hover .podrobnostiCard__text::after {
     opacity: 100;
     left: 1em;

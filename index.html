@@ -20,13 +20,13 @@
                 <tel class="menuUp__text menuUp__text--phone">+420 777 666 666</tel>
                 <p class="menuUp__text menuUp__text--mail">obchod@l3web.cz</p>
             </div>
-            <p class="menuUp__login">Přihlášení</p>
+            <p class="menuUp__text menuUp__text--login">Přihlášení</p>
         </div>
         <div class="menu__menuDown">
             <div class="navbar">
                 <a href="./index.html" class="navbar__logo"><img src="./img/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
                 
-               <div>
+               
                 <div class="hamburger-row">
                     
                     <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
@@ -45,7 +45,6 @@
                         <a class="button button--menu" href="#">Zkušební verze</a>
                     </ul>
                 </nav>
-               </div>
             </div>
         </div>
     </header>
@@ -55,7 +54,7 @@
             <div class="uvodBody">
                 <h1><span class="orange">Řízení školy</span> ještě nebylo jednodušší</h1>
                 <p>Představujeme Software pro <b>řízení lidských zdrojů ve škole nebylo efektivnější.</b></p>
-                <div>
+                <div class="uvodBody__odrazky">
                     <p class="uvodBody__odrazka">Počítá mzdové náklady</p>
                     <p class="uvodBody__odrazka">Generuje lidi</p>
                     <p class="uvodBody__odrazka">Tvoří budoucnost</p>
@@ -68,17 +67,19 @@
         </div>
     </main>
 
+    <div class="line"></div>
+
     <section>
-        <h2 class="hidden">Partneři</h2>
+        <h2 class="skryt">Partneři</h2>
         <div class="loga">
             <div class="loga__wrapper">
-                <img class="logo__img" src="./img/partneri_logo1.svg" alt="první logo">
-                <img class="logo__img" src="./img/partneri_logo2.svg" alt="druhé logo">
-                <img class="logo__img" src="./img/partneri_logo3.svg" alt="třetí logo">
+                <img src="./img/partneri_logo1.svg" alt="první logo">
+                <img src="./img/partneri_logo2.svg" alt="druhé logo">
+                <img src="./img/partneri_logo3.svg" alt="třetí logo">
             </div>
             <div class="loga__wrapper">
-                <img class="logo__img" src="./img/partneri_logo4.svg" alt="čtvrté logo">
-                <img class="logo__img" src="./img/partneri_logo5.svg" alt="paté logo">
+                <img src="./img/partneri_logo4.svg" alt="čtvrté logo">
+                <img src="./img/partneri_logo5.svg" alt="paté logo">
             </div>
         </div>
     </section>
@@ -87,19 +88,19 @@
         <h2>Výhody řešení</h2>
         <div class="vyhody__cardsGrid">
             <div class="vyhodyCard">
-                <img class="vyhodyCard__img" src="./img/vyhody_img1.png" alt="">
+                <img src="./img/vyhody_img1.png" alt="ikona hodin">
                 <p class="vyhodyCard__text"><span class="orange">Zkracuje čas</span> práce díky velkému množství funkcí.</p>
             </div>
             <div class="vyhodyCard">
-                <img class="vyhodyCard__img" src="./img/vyhody_img2.png" alt="">
+                <img src="./img/vyhody_img2.png" alt="ikona dvou lidí">
                 <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
             </div>
             <div class="vyhodyCard">
-                <img class="vyhodyCard__img" src="./img/vyhody_img3.png" alt="">
+                <img src="./img/vyhody_img3.png" alt="ikona dvou protisměrných šipek">
                 <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
             </div>
             <div class="vyhodyCard">
-                <img class="vyhodyCard__img" src="./img/vyhody_img4.png" alt="">
+                <img src="./img/vyhody_img4.png" alt="ikona splněného úkolu">
                 <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
             </div>
         </div>
@@ -122,13 +123,14 @@
         <div class="pribehFlex">
             <div class="pribeh">
                 <p class="pribeh__nadpis">Jsme dva - Honza a Tomáš</p>
-                <p class="pribeh__text">Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst. 
-                    Fusce luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras ultricies, elit sit amet cursus consectetur, risus felis ullamcorper nulla, ut scelerisque sapien lorem non sem. Integer vestibulum ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo malesuada purus a mollis. Vestibulum pulvinar aliquam libero eu consequat. Cras massa orci, ultrices sed scelerisque id, semper vel neque. Proin a turpis quis nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet ante. Mauris sit amet mi vitae arcu dignissim porttitor et in arcu. Nullam eleifend molestie arcu, pretium fermentum orci feugiat eget. Integer dapibus tincidunt ipsum, at rutrum magna rutrum at. Quisque pretium convallis vestibulum.</p>
+                <p class="pribeh__text">Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst...</p> 
                 <a class="button" href="#">Přečíst celý příběh</a>
             </div>
-            <img class="pribeh__img img--responsiv" src="./img/pribeh__img.png" alt="">
+            <img class="pribeh__img img--responsiv" src="./img/pribeh__img.png" alt="fotka dvou lidí">
         </div>
     </section>
+
+    <div class="line"></div>
 
     <section>
         <div class="recenze__wrapper--1">
@@ -196,71 +198,72 @@
         
     </section>
 
-</body>
-<footer>
-    <div class="footer">
-        <div class="footer__mainWrapper">
-            <div class="footer__kategory">
-                <img src="./img/logo_footer.svg" alt="">
-                <div class="footer__wrapper">
-                    <div>
-                        <p class="footer__neodkaz">Pslib.cz s.r.o.</p>
-                        <p class="footer__neodkaz">Masarykova 12345</p>
-                        <p class="footer__neodkaz">460 001 Liberec</p>
-                    </div>
-                    <div class="footer__wrapper2">
-                        <tel class="footer__odkaz">+420 777 666 666</tel>
-                        <p class="footer__odkaz">info@l3web.cz</p>
+    <footer>
+        <div class="footer">
+            <div class="footer__mainWrapper">
+                <div class="footer__kategory">
+                    <img src="./img/logo_footer.svg" alt="Logo firmy Logoipsum">
+                    <div class="footer__wrapper">
                         <div>
-                            <img src="./img/footer_youtube.svg" alt="">
-                            <img src="./img/footer_linkedin.svg" alt="">
+                            <p class="footer__neodkaz">Pslib.cz s.r.o.</p>
+                            <p class="footer__neodkaz">Masarykova 12345</p>
+                            <p class="footer__neodkaz">460 001 Liberec</p>
+                        </div>
+                        <div class="footer__wrapper2">
+                            <tel class="footer__odkaz footer__odkaz--tel">+420 777 666 666</tel>
+                            <p class="footer__odkaz footer__odkaz--mail">info@l3web.cz</p>
+                            <div>
+                                <img src="./img/footer_youtube.svg" alt="Logo YouTube">
+                                <img src="./img/footer_linkedin.svg" alt="Logo LinkedIn">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer__kategory">
-                <p class="footer__title">Videotutoriály</p>
-                <div class="footer__text">
-                    <a class="footer__odkaz" href="#">CSS</a>
-                    <a class="footer__odkaz" href="#">Animace</a>
-                    <a class="footer__odkaz" href="#">Stříhání videa</a>
-                    <a class="footer__odkaz" href="#">Výběr barev</a>
-                    <a class="footer__odkaz" href="#">Plánování pracovníků a mezd</a>
-                    <a class="footer__odkaz" href="#">Všechna videa</a>
+                <div class="footer__kategory">
+                    <p class="footer__title">Videotutoriály</p>
+                    <div class="footer__text">
+                        <a class="footer__odkaz" href="#">CSS</a>
+                        <a class="footer__odkaz" href="#">Animace</a>
+                        <a class="footer__odkaz" href="#">Stříhání videa</a>
+                        <a class="footer__odkaz" href="#">Výběr barev</a>
+                        <a class="footer__odkaz" href="#">Plánování pracovníků a mezd</a>
+                        <a class="footer__odkaz" href="#">Všechna videa</a>
+                    </div>
+                </div>
+                <div class="footer__kategory">
+                    <p class="footer__title">Podpora</p>
+                    <div class="footer__text">
+                        <a class="footer__odkaz" href="#">Přihlášení k účtu</a>
+                        <a class="footer__odkaz" href="#">Školení</a>
+                        <a class="footer__odkaz" href="#">FAQ - Časté dotazy</a>
+                        <a class="footer__odkaz" href="#">Kontakty</a>
+                        <a class="footer__odkaz" href="#">Videotutoriály</a>
+                    </div>
+                </div>
+                <div class="footer__kategory">
+                    <p class="footer__title">Menu</p>
+                    <div class="footer__text">
+                        <a class="footer__odkaz" href="./index.html">Úvod</a>
+                        <a class="footer__odkaz" href="./funkce.html">Funkce</a>
+                        <a class="footer__odkaz" href="#">Podpora</a>
+                        <a class="footer__odkaz" href="#">Ceník</a>
+                        <a class="footer__odkaz" href="./kontakt.html">Kontakt</a> 
+                    </div>
                 </div>
             </div>
-            <div class="footer__kategory">
-                <p class="footer__title">Podpora</p>
-                <div class="footer__text">
-                    <a class="footer__odkaz" href="#">Přihlášení k účtu</a>
-                    <a class="footer__odkaz" href="#">Školení</a>
-                    <a class="footer__odkaz" href="#">FAQ - Časté dotazy</a>
-                    <a class="footer__odkaz" href="#">Kontakty</a>
-                    <a class="footer__odkaz" href="#">Videotutoriály</a>
+    
+            <div class="footer__line"></div>
+    
+            <div class="footer__paticka">
+                <div class="paticka__wrapper">
+                    <p>© Copyright 2023 - Pslib.cz s.r.o.</p>
+                    <p>Cookies</p>
+                    <p>Podmínky užití</p>
                 </div>
-            </div>
-            <div class="footer__kategory">
-                <p class="footer__title">Menu</p>
-                <div class="footer__text">
-                    <a class="footer__odkaz" href="./index.html">Úvod</a>
-                    <a class="footer__odkaz" href="./funkce.html">Funkce</a>
-                    <a class="footer__odkaz" href="#">Podpora</a>
-                    <a class="footer__odkaz" href="#">Ceník</a>
-                    <a class="footer__odkaz" href="./kontakt.html">Kontakt</a> 
-                </div>
-            </div>
-        </div>
-
-        <div class="footer__line"></div>
-
-        <div class="footer__paticka">
-            <div class="paticka__wrapper">
-                <p>© Copyright 2023 - Pslib.cz s.r.o.</p>
-                <p>Cookies</p>
-                <p>Podmínky užití</p>
-            </div>
                 <p>Vyrobilo: B interactive</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
+
 </html>
