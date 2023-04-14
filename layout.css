@@ -8,40 +8,23 @@ align-items: center;
 margin: 0;
 }
 
-section {
-   /* padding: 2em 1em;*/
-}
+
 .menuUp__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    /*padding: 0px;*/
     gap: 8px;
-   /* margin-left: 1em;*/
 }
 .uvod {
-   /* display: flex;
-    flex-direction: column;
-    justify-items: right;
-    justify-content: flex-start;
-    align-content: flex-start;
-    gap: 40px;*/
-    /*max-width: 20em; */   /*!!!!!!!!!!*/
     margin: 0 2em;
+    margin-bottom: 2em;
 }
-.uvodBody{
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 17px;
-   /* width: 20em;*/
+.uvodBody {
    margin-bottom: 1em;
 }
 
 .uvod__img {
-   /* width: 100%;*/   
-   /* align-self: flex-start;*/
     border-radius: 22.5px;
     max-width: 500px;
 }
@@ -51,22 +34,20 @@ section {
     flex-direction: column;
     gap: 1em;
     align-items: center;
-    margin-bottom: 2em;
 }
 .loga__wrapper {
     display: flex;
     gap: 1em;
 }
 
-.vyhody__podrobnosti {
-    display: grid;
-    justify-items: center;
-    gap: 1.5em;
-}
 .vyhody__cardsGrid {
     display: grid;
     gap: 4em;
     justify-items: center;
+}
+.vyhody__podrobnosti {
+    margin-bottom: 2em;
+    gap: 2em;
 }
 
 .pribehFlex {
@@ -80,52 +61,22 @@ section {
     margin-top: 1.5em;
 }
 
-.recenze__wrapper--2 {
-    /*display: flex;
-    flex-direction: column;
-    gap: 4em;*/
-}
-
-.aktuality {
-    /*display: flex;
-    flex-direction: column;
-    gap: 2em;*/
-    
-}
-.aktualita__wrapper {
+.aktualita {
     margin-bottom: 2em;
 }
 
-
-.funkce {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
-    /*padding: 10px 20px;
-    gap: 30px;
-    margin-left: 4em;
-    margin-right: 4em;
-   /* width: 100%;*/
-}
-.funkce__wrapper {
-   /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;*/
-}
 .funkce__text {
     width: 15em;
 }
 .vyhody__podrobnosti--funkce {
-    padding: 1em;
+    display: grid;
+    gap: 2em;
+    padding: 1.5em;
     border-radius: 0.9em;
 }
-/*KONTAKT*/
-.kontakt__wrapper {      /*style*/
-    /*display: flex;
-    flex-direction: column;*/
+
+.kontakt__wrapper {      
     margin: 0 2em;
-    /*gap: 1em;*/
 }
 .kontakt__wrapper2 {
     margin-bottom: 1em;
@@ -142,7 +93,7 @@ section {
         background-color: var(--primarLines);
     }
 }
-
+/*tablet*/
 @media (min-width: 768px) {
     
     .nav-link {
@@ -151,24 +102,33 @@ section {
         text-decoration: none;
     }
     
-
     .uvod {
         max-width: 30em;
     }
 
     .loga {
         flex-direction: row;
-    }
-    .vyhody__cardsGrid {
-        grid-template-columns: 1fr 1fr;
         gap: 2em;
     }
-    .vyhody__podrobnosti {
+    .loga__wrapper {
+        gap: 2em;
+    }
+    .vyhody__cardsGrid {
+       /* display: grid;*/
         grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        width: fit-content;
+        position: relative;
+        transform: translate(-50%, 0%);
+        left: 50%;
     }
-    .center {
+    .vyhody__podrobnosti {
+        gap: 1.5em;
+    }
+    
+    /*.center {
         align-self: center;
-    }
+    }*/
     
     .pribehFlex {
         display: flex;
@@ -188,10 +148,7 @@ section {
         max-width: none;
         margin-top: 0;
     }
-    .pribeh__text {
-       /* width: 20em;*/
-    }
-
+    
     .aktuality {
         display: flex;
         flex-direction: row;
@@ -207,14 +164,13 @@ section {
     .funkce__text {
         width: 20em;
     }
-
     .funkce__wrapper2 {
        /* width: 100%;*/
-       margin: 3em;
+       margin: 2em;
        margin-top: 0;
     }
     .vyhody__podrobnosti--funkce {
-        padding: 3em;
+        padding: 2em;
         border-radius: 32px;
     }
 
@@ -231,15 +187,14 @@ section {
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 0;
-        flex-basis: 310px;
-        flex-grow: 1;
+        width: 25em;
     }
     .kontakt__mapaImg {
         flex-basis: 500px;
-        flex-grow: 2;
+        flex-grow: 1;
     }
 }
-
+/*notebook*/
 @media (min-width: 961px) {
     .uvod {
         display: flex;
@@ -252,16 +207,15 @@ section {
     }
     .vyhody__podrobnosti--funkce {
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
     }
     .kontakt__wrapper {
         flex-direction: row;
         margin: 0 2em;
         gap: 3em;
     }
-    
 }
-
-/* desktop*/
+/*desktop*/
 @media (min-width: 1281px) {
     .uvod {
         flex-direction: row;
@@ -277,12 +231,10 @@ section {
         gap: 1em;
     }
 
-    .recenze__wrapper--2 {
+    .recenze__flexBox {
         display: flex;
         gap: 2em;
     }
-    
-    
 }
 
 

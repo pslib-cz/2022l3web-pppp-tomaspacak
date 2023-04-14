@@ -4,7 +4,7 @@
     --footerText:#8ECAE6;
     --buttonText: #ffffff;
     --vyhodyBg: rgba(142, 202, 230, 0.15);
-    --aktualityBg: rgb(245, 245, 245); /*skontrolovat*/
+    --aktualityBg: rgb(245, 245, 245); 
     --primarLines: #D9D9D9;
     --Slines: #EFEFEF;
     --text: black;
@@ -15,7 +15,7 @@ p {
 a {
     text-decoration: none;
 }
-.nav-item:hover {        /*font*/
+.nav-item:hover {        
     transition: 0.2s;
     transform: scale(1.1);
     font-weight: 700;
@@ -26,21 +26,17 @@ a {
 
 header {
     width: 100%;
+    margin: 0;
+    margin-bottom: 2em;
 }
-section {
-   /* margin-top: 2em;*/
-}
+
 
 /*MENU*/
 .menu__menuUp {
     display: flex;
-    /*flex-direction: row;*/
     justify-content: space-between;
-    /*align-items: center;*/
     padding: 1em 2em;
-    /*gap: 50px;*/
     background-color: var(--aktualityBg);
-    /*width: 100%;*/
     position: relative;
     z-index: 2;
 }
@@ -51,19 +47,11 @@ section {
     width: 24px;
     height: 24px;
     background-image: url(./img/header_login.svg);
-    background-position: center;
-    background-size: contain;
     margin-right: 0.5em;
 }
-.menuUp__login {
-    /*display: flex;
-    /*flex-direction: row;*/
-    /*align-items: center;*/
-    /*margin-right: 1em;*/
-}
+
 .menuUp__text {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .menuUp__text--phone::before {
@@ -72,8 +60,6 @@ section {
     width: 16px;
     height: 16px;
     background-image: url(./img/menu_phone.svg);
-    background-position: center;
-    background-size: contain;
     margin-right: 0.5em;
 }
 .menuUp__text--mail::before {
@@ -82,8 +68,6 @@ section {
     width: 16px;
     height: 16px;
     background-image: url(./img/menu_mail.svg);
-    background-position: center;
-    background-size: contain;
     margin-right: 0.5em;
 }
 .menuUp__text--phone::after {
@@ -93,13 +77,12 @@ section {
     height: 20px;
     margin: 0 1em;
 }
-
 .navbar {
     position: relative;
     justify-content: space-between;
     align-items: center;
 }
-/* hamburger menu */
+
 .hamburger-row {
     padding: 1em 2em;
     display: flex;
@@ -119,7 +102,8 @@ section {
 .navbar__logo{
     color: var(--white-color);
     position: absolute;
-    top: 25%;
+    transform: translate(0%, -50%);
+    top: 50%;
     z-index: 5;
     margin-left: 2em;
 }
@@ -155,10 +139,9 @@ section {
     .hamburger-row {
         position: relative;
         z-index: 1;
-        /*display: flex;*/
         background-color: var(--buttonText);
     }
-    .hamburger-nav ul li > a {
+    .hamburger-nav ul li > a {         /*udekat tridu?*/
         color: var(--buttonText);
     }
     .hamburger-nav.active {
@@ -172,9 +155,11 @@ section {
         transition: 1s;
         position: absolute;
         background-color: var(--primarColor);
-        width: 11em;
+        width: 13em;
         z-index: 0;
-        padding-left: 2em;
+    }
+    .hamburger-nav li:active {
+        background-color: var(--secondColor);
     }
 
     .hamburger.active  span:nth-child(1) {
@@ -196,11 +181,11 @@ section {
         translate: .7s;
     }
     .hamburger-nav ul > li {
-        color: var(--buttonText);              /*:::::*/
+        color: var(--buttonText);              
     }
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .hamburger-row {
         display: none;
     }
@@ -208,22 +193,13 @@ section {
         transform: none;
         margin: 1em;
     }
-    .navbar__logo {
-        top: 6%;
-    }
     .hamburger-nav > ul {
-       /* height: auto;
-        width: 100%;*/
         display: flex;
         justify-content: end;
         align-items: center;
         gap: 1em;
     }
-    .hamburger-nav li:nth-child(even) {
-        background-color: rgba(0, 0, 0, 0);      /*:::::::::*/
-    }
     .hamburger-nav li a{
-        background-color: rgba(0, 0, 0, 0);      /*vybyrani*/
         color: var(--text);
         transition: .2s;
         text-decoration: none;
@@ -240,6 +216,9 @@ section {
         transform: scale(1.1);
         transition: .2s;
     }
+    .hamburger-nav li a:focus {
+        border-bottom: 4px solid #F5841F;
+    }
     .button--menu::before {
         content: "";
         display: inline-block;
@@ -253,14 +232,6 @@ section {
 }
 
 
-header{
-   /* position: relative;
-    background-size:cover;
-    background-position: center;*/
-    margin: 0;
-    margin-bottom: 2em;
-}
-
 /*INDEX*/
 .uvodBody__odrazky {
     margin: 1.5em 0;
@@ -271,7 +242,6 @@ header{
     width: 16.3px;
     height: 12.26px;
     background-image: url(./img/uvod_icon.svg);
-    background-position: center;
     background-size: contain;
     margin-right: 3px;
 }
@@ -284,6 +254,9 @@ header{
 }
 .button:hover {
     background-color: var(--secondColor);
+}
+.button:active {
+    background-color: var(--footerText);
 }
 .button--border {
     border: 4px solid var(--primarColor);
@@ -302,7 +275,7 @@ header{
 }
 .skryt { 
    position: absolute;
-   margin-left: -300em;         /*špatně!!!! od marginovat absolut*/
+   margin-left: -300em;        
 }
 .line {
     height: 1px;
@@ -311,12 +284,11 @@ header{
     margin: 2em 0;
 }
 
-
 .vyhody {
-    background: var(--vyhodyBg); /*checknout*/
+    background: var(--vyhodyBg);
     width: 100%;
-    padding-bottom: 2em;
-    padding-top: 1em ;
+    padding: 2em 0;
+    margin: 2em 0;
 }
 .vyhodyCard {
     width: 304px;
@@ -324,15 +296,16 @@ header{
 }
 .vyhody__line {
     border: 1px dashed var(--footerText);
-    transform: matrix(1, 0, 0, -1, 0, 0);    /*znytecny*/
-    width: 70%;
+    width: 50%;
     position: relative;
-    left: 15%;
+    transform: translate(-50%, 0%);
+    left: 50%;
     margin: 2em 0;
 }
 .podrobnostiCard {
+    display: inline-block;
     background-color: var(--buttonText);
-    box-shadow: 0px 0px 25px var(--footerText);   /*barva root*/
+    box-shadow: 0px 0px 25px var(--footerText);   
     border-radius: 8px;
     padding: 1em;
     width: 15em;
@@ -345,11 +318,10 @@ header{
     flex-wrap: wrap;
     text-overflow: ellipsis;  
     height: 4em;
-    color: var(--text);   /*barva root*/
+    color: var(--text);   
     margin-bottom: 2em;
     margin-top: 1em;
 }
-
 
 .pribeh__text {
     margin: 1em 0;
@@ -360,19 +332,10 @@ header{
 
 .recenze {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 19px;
     margin-bottom: 2em;
-}
-.recenze__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 17px;
-   /* width: 339px;*/
 }
 .recenze__text {
     overflow: hidden;
@@ -380,12 +343,7 @@ header{
     text-overflow: ellipsis;
     width: 230px;
     height: 4em;
-}
-.recenze__wrapper--1 {
-    /*display: flex;
-    flex-direction: column;
-    gap: 2.5em;
-    align-items: center;*/
+    margin-bottom: 0.5em;
 }
 
 .aktualita__text {
@@ -395,23 +353,11 @@ header{
     width: 16em;
     height: 2.8em;
 }
-.aktuality__wrapper { /*zbytecny*/
-    display: grid;
-    gap: 1em;
-}
 .aktuality {
     margin-right: -3em;
 }
-.aktualita {   /*smazat tridu*/
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;*/
-    /*margin-right: -3em;*/
-}
-.aktualita__wrapper::before {
+.aktualita::before {
     content: "24.";
-    /*display: inline-block;*/
     width: 43px;
     height: 44px;
     background-image: url(./img/aktualiy.svg);
@@ -421,7 +367,6 @@ header{
     color: var(--footerText);
     background-size: contain;
     background-repeat: no-repeat;
-    /*background-position: center;*/
     background-position-y: 10px;
     margin-left: -3.1em;
     margin-bottom: -2.4em;
@@ -557,6 +502,7 @@ footer {
     gap: 0.5em;
     color: var(--text);
     width: fit-content;
+    margin-top: 1em;
 }
 .podrobnostiCard--funkce {
     position: relative;
@@ -568,8 +514,7 @@ footer {
 .podrobnostiCard__text::after {
     content: url(./img/funkce__hover.svg);
     display: flex;
-    /*width: 14.8px;
-    height: 10.59px;*/
+    /*width: 14.8px;*/
     height: 14.8px;
     background-color: var(--primarColor);
     position: absolute;
@@ -600,9 +545,7 @@ footer {
 .dotazy__text--2 {
     text-align: center;
 }
-.funkce__wrapper {
-    /*margin: 0 2em;*/
-}
+
 .vyhody__podrobnosti--funkce .podrobnostiCard--funkce:hover .podrobnostiCard__text::after {
     opacity: 100;
     left: 1em;
@@ -611,12 +554,6 @@ footer {
 .vyhody__podrobnosti--funkce .podrobnostiCard--funkce:hover .podrobnostiCard__nadpis--funkce {
     color: var(--secondColor);
 }
-
-/*.funkce__wrapper .funkce__video:hover .funkce__video::before {
-    transform: scale(2);
-}*/
-
-
 
 /* KONTAKT*/ 
 .kontakt__background {
@@ -627,7 +564,10 @@ footer {
 }
 
 .kontakt__mapaImg {
-  max-width: 700px;
+  max-width: 600px;
+}
+.kontakt__text--paticka {
+    margin-top: 0.5em;
 }
 
 
