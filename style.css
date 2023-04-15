@@ -362,15 +362,11 @@ header {
     margin-bottom: 0.5em;
 }
 
-.aktualita__text {
-    overflow: hidden;
-    flex-wrap: wrap;
-    text-overflow: ellipsis;
-    width: 16em;
-    height: 2.8em;
-}
 .aktuality {
     margin-right: -3em;
+}
+.aktualita {
+    width: 15em;
 }
 .aktualita::before {
     content: "24.";
@@ -530,7 +526,7 @@ footer {
 .podrobnostiCard__text::after {
     content: url(./img/funkce__hover.svg);
     display: flex;
-    /*width: 14.8px;*/
+    align-items: center;
     height: 14.8px;
     background-color: var(--primarColor);
     position: absolute;
