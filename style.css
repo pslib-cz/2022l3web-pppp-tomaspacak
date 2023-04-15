@@ -578,6 +578,7 @@ footer {
 
 .kontakt__mapaImg {
   max-width: 600px;
+  min-width: 100px;
 }
 .kontakt__text--paticka {
     margin-top: 0.5em;
