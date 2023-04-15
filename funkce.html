@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./hamburger.js"></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>Funkce</title>
 </head>
 <body>
     <header>
         <div class="menu__menuUp">
             <div class="menuUp__wrapper">
-                <p class="menuUp__text menuUp__text--phone">+420 777 666 666</p>
-                <p class="menuUp__text menuUp__text--mail">obchod@l3web.cz</p>
+                <a class="menuUp__text menuUp__text--phone" href="tel:+420777666666">+420 777 666 666</a>
+                <a class="menuUp__text menuUp__text--mail" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
             </div>
             <p class="menuUp__text menuUp__text--login">Přihlášení</p>
         </div>
@@ -27,9 +28,7 @@
             <div class="navbar">
                 <a href="./index.html" class="navbar__logo"><img src="./img/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
                 
-               
                 <div class="hamburger-row">
-                    
                     <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
                         <span></span>
                         <span></span>
@@ -38,12 +37,12 @@
                 </div>
                 <nav class="hamburger-nav hamburger-zone">
                     <ul>
-                        <li><a href="./index.html">Úvod</a></li>
-                        <li><a href="./funkce.html">Funkce</a></li>
-                        <li><a href="#">Podpora</a></li>
-                        <li><a href="#">Ceník</a></li>
-                        <li><a href="./kontakt.html">Kontakt</a></li>
-                        <a class="button button--menu" href="#">Zkušební verze</a>
+                        <li class="menuDown__item"><a href="./index.html">Úvod</a></li>
+                        <li class="menuDown__item"><a href="./funkce.html">Funkce</a></li>
+                        <li class="menuDown__item"><a href="#">Podpora</a></li>
+                        <li class="menuDown__item"><a href="#">Ceník</a></li>
+                        <li class="menuDown__item"><a href="./kontakt.html">Kontakt</a></li>
+                        <li class="menuDown__item menuDown__item--button"><a class="button button--menu" href="#">Zkušební verze</a></li>
                     </ul>
                 </nav>
             </div>
@@ -122,9 +121,9 @@
             <p class="dotazy__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
             <p class="dotazy__mail">podpora@l3web.cz</p>
             <div class="dotazy__wrapper">
-                <a class="button button--L" href="#">Napište nám na email</a>
+                <a class="button" href="mailto:podpora@l3web.cz">Napište nám na email</a>
                 <p class="dotazy__text--2">nebo</p>
-                <a class="button button--border" href="#">Zavolejte nám</a>
+                <a class="button button--border" href="tel:+420777666666">Zavolejte nám</a>
             </div>
         </div>
     </section>
@@ -141,8 +140,8 @@
                             <p class="footer__neodkaz">460 001 Liberec</p>
                         </div>
                         <div class="footer__wrapper2">
-                            <tel class="footer__odkaz footer__odkaz--tel">+420 777 666 666</tel>
-                            <p class="footer__odkaz footer__odkaz--mail">info@l3web.cz</p>
+                            <a class="footer__odkaz footer__odkaz--tel" href="tel:+420777666666">+420 777 666 666</a>
+                            <a class="footer__odkaz footer__odkaz--mail" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
                             <div>
                                 <img src="./img/footer_youtube.svg" alt="Logo YouTube">
                                 <img src="./img/footer_linkedin.svg" alt="Logo LinkedIn">

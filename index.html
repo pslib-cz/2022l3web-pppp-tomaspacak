@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./hamburger.js"></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>Logoipsum</title>
 </head>
 <body>
     <header>
         <div class="menu__menuUp">
             <div class="menuUp__wrapper">
-                <tel class="menuUp__text menuUp__text--phone">+420 777 666 666</tel>
-                <p class="menuUp__text menuUp__text--mail">obchod@l3web.cz</p>
+                <a class="menuUp__text menuUp__text--phone" href="tel:+420777666666">+420 777 666 666</a>
+                <a class="menuUp__text menuUp__text--mail" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
             </div>
             <p class="menuUp__text menuUp__text--login">Přihlášení</p>
         </div>
@@ -37,12 +38,12 @@
                 </div>
                 <nav class="hamburger-nav hamburger-zone">
                     <ul>
-                        <li><a href="./index.html">Úvod</a></li>
-                        <li><a href="./funkce.html">Funkce</a></li>
-                        <li><a href="#">Podpora</a></li>
-                        <li><a href="#">Ceník</a></li>
-                        <li><a href="./kontakt.html">Kontakt</a></li>
-                        <a class="button button--menu" href="#">Zkušební verze</a>
+                        <li class="menuDown__item"><a href="./index.html">Úvod</a></li>
+                        <li class="menuDown__item"><a href="./funkce.html">Funkce</a></li>
+                        <li class="menuDown__item"><a href="#">Podpora</a></li>
+                        <li class="menuDown__item"><a href="#">Ceník</a></li>
+                        <li class="menuDown__item"><a href="./kontakt.html">Kontakt</a></li>
+                        <li class="menuDown__item menuDown__item--button"><a class="button button--menu" href="#">Zkušební verze</a></li>
                     </ul>
                 </nav>
             </div>
@@ -87,21 +88,17 @@
     <section class="vyhody">
         <h2>Výhody řešení</h2>
         <div class="vyhody__cardsGrid">
-            <div class="vyhodyCard">
-                <img src="./img/vyhody_img1.png" alt="ikona hodin">
-                <p class="vyhodyCard__text"><span class="orange">Zkracuje čas</span> práce díky velkému množství funkcí.</p>
+            <div class="vyhodyCard vyhodyCard--cas">
+                <p class="vyhodyCard__text"><span class="orange">Zkracuje čas práce</span> díky velkému množství funkcí.</p>
             </div>
-            <div class="vyhodyCard">
-                <img src="./img/vyhody_img2.png" alt="ikona dvou lidí">
-                <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
+            <div class="vyhodyCard vyhodyCard--pristup">
+                <p class="vyhodyCard__text">Poskytuje selektivní přístup všem pracovníkům</p>
             </div>
-            <div class="vyhodyCard">
-                <img src="./img/vyhody_img3.png" alt="ikona dvou protisměrných šipek">
-                <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
+            <div class="vyhodyCard vyhodyCard--outsourcing">
+                <p class="vyhodyCard__text">Umožňuje outsourcing personalistických procesů</p>
             </div>
-            <div class="vyhodyCard">
-                <img src="./img/vyhody_img4.png" alt="ikona splněného úkolu">
-                <p class="vyhodyCard__text">Zkracuje čas práce díky velkému množství funkcí.</p>
+            <div class="vyhodyCard vyhodyCard--pozadavky">
+                <p class="vyhodyCard__text">Zaručuje splnění požadavků ISO a IATF</p>
             </div>
         </div>
 
@@ -173,14 +170,14 @@
         <h2>Aktuality</h2>
         <div class="aktuality">
             <article class="aktualita">
-                <p class="aktualita__nadpis">Sleva na  3 pozice 20%</p>
+                <h4 class="aktualita__nadpis">Sleva na  3 pozice 20%</h4>
                 <div>
                     <p class="aktualita__text">Lorem ipsum dolor sia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
                     <a class="aktualita__odkaz" href="#">Přečíst celý článek</a>
                 </div>
             </article>
             <article class="aktualita">
-                <p class="aktualita__nadpis">Sleva na  3 pozice 20%</p>
+                <h4 class="aktualita__nadpis">Sleva na  3 pozice 20%</h4>
                 <div>
                     <p class="aktualita__text">Lorem ipsum dolor sia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
                     <a class="aktualita__odkaz" href="#">Přečíst celý článek</a>
@@ -201,8 +198,8 @@
                             <p class="footer__neodkaz">460 001 Liberec</p>
                         </div>
                         <div class="footer__wrapper2">
-                            <tel class="footer__odkaz footer__odkaz--tel">+420 777 666 666</tel>
-                            <p class="footer__odkaz footer__odkaz--mail">info@l3web.cz</p>
+                            <a class="footer__odkaz footer__odkaz--tel" href="tel:+420777666666">+420 777 666 666</a>
+                            <a class="footer__odkaz footer__odkaz--mail" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
                             <div>
                                 <img src="./img/footer_youtube.svg" alt="Logo YouTube">
                                 <img src="./img/footer_linkedin.svg" alt="Logo LinkedIn">
