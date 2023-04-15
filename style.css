@@ -496,7 +496,7 @@ footer {
 }
 
 /*FUNKCE */
-.funkce__wrapper2 {
+.funkce {
     margin-bottom: 2em;
 }
 .funkce__video::before {
@@ -572,7 +572,7 @@ footer {
 }
 
 /* KONTAKT*/ 
-.kontakt__background {
+.kontakt--background {
     background-color: var(--vyhodyBg);
     width: 100%;
     margin-bottom: 3em;

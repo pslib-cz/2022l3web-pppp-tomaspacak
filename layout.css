@@ -6,12 +6,12 @@
     margin: 0;
 }
 
-.menuUp__wrapper {
+.menuUp__vlevo {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.5em;
 }
 .uvod {
     margin: 0 2em;
@@ -76,10 +76,10 @@
     border-radius: 0.9em;
 }
 
-.kontakt__wrapper {      
+.kontakt {      
     margin: 0 2em;
 }
-.kontakt__wrapper2 {
+.kontakt__wrapper {
     margin-bottom: 1em;
 }
 .kontakt__paticka {
@@ -87,7 +87,7 @@
 }
 
 @media (min-width: 468px) {
-    .menuUp__wrapper {
+    .menuUp__vlevo {
         gap: 0;
     }
     .menuUp__text--phone::after {
@@ -102,11 +102,9 @@
         font-weight: 700;
         text-decoration: none;
     }
-    
     .uvod {
         max-width: 30em;
     }
-
     .loga {
         flex-direction: row;
         gap: 2em;
@@ -115,7 +113,6 @@
         gap: 2em;
     }
     .vyhody__cardsGrid {
-       /* display: grid;*/
         grid-template-columns: 1fr 1fr;
         gap: 2em;
         width: fit-content;
@@ -154,7 +151,10 @@
         flex-direction: row;
         gap: 8em;
     }
-
+    .funkce {
+        margin: 2em;
+        margin-top: 0;
+     }
     .funkce__wrapper {
         display: flex;
         flex-direction: row;
@@ -164,17 +164,12 @@
     .funkce__text {
         width: 20em;
     }
-    .funkce__wrapper2 {
-       /* width: 100%;*/
-       margin: 2em;
-       margin-top: 0;
-    }
     .vyhody__podrobnosti--funkce {
         padding: 2em;
         border-radius: 32px;
     }
 
-    .kontakt__wrapper {
+    .kontakt {
         display: flex;
         gap: 1em;
         max-width: 1000px;
@@ -182,12 +177,11 @@
     .kontakt__paticka {
         margin: 0;
     }
-    .kontakt__wrapper2 {
+    .kontakt__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 0;
-        /*width: 25em;*/
         min-width: 20em;
     }
     .kontakt__mapaImg {
@@ -210,7 +204,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5em;
     }
-    .kontakt__wrapper {
+    .kontakt {
         flex-direction: row;
         margin: 0 2em;
         gap: 3em;
